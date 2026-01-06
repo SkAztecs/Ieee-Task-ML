@@ -54,3 +54,21 @@ Video_Name: Name of the video file
 Prediction: Predicted class label (0 or 1)
 
 Probability: Confidence score between 0 and 1
+
+Tools and Libraries
+
+Python
+
+OpenCV
+
+TensorFlow / Keras
+
+scikit-learn
+
+NumPy, Pandas
+
+Google Colab
+
+Conclusion
+
+This project demonstrates an effective approach for video classification by combining CNN-based feature extraction, temporal aggregation, and a neural network classifier. The methodology is suitable for small video datasets where training end-to-end video models is impractical.
