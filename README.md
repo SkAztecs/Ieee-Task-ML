@@ -18,3 +18,13 @@ Methodology
 Video Feature Extraction
 
 Raw videos cannot be directly used by machine learning models. Each video was processed by sampling evenly spaced frames. A pretrained MobileNetV2 convolutional neural network (trained on ImageNet) was used as a fixed feature extractor. Each frame was converted into a 1280-dimensional embedding.
+
+Temporal Feature Aggregation
+
+To represent an entire video while preserving temporal information:
+
+The mean of frame-level embeddings was computed to capture average visual appearance.
+
+The standard deviation of embeddings was computed to capture frame-to-frame variability.
+
+These two vectors were concatenated to form a 2560-dimensional feature representation for each video.
