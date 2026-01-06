@@ -28,3 +28,29 @@ The mean of frame-level embeddings was computed to capture average visual appear
 The standard deviation of embeddings was computed to capture frame-to-frame variability.
 
 These two vectors were concatenated to form a 2560-dimensional feature representation for each video.
+
+Models Evaluated
+
+Logistic Regression (baseline)
+
+Random Forest
+
+Neural Network (Multilayer Perceptron)
+
+Baseline models performed close to random, indicating that the extracted features required a more flexible non-linear classifier.
+
+Final Model
+
+A shallow neural network was trained on the extracted features after feature scaling. During evaluation, predicted probabilities were inverted to align with the target label definition. The final model demonstrated meaningful class separation with a validation ROC-AUC of approximately 0.66 after correction.
+
+Output
+
+Predictions were generated for the test dataset and saved as submission.csv.
+
+Output Format
+
+Video_Name: Name of the video file
+
+Prediction: Predicted class label (0 or 1)
+
+Probability: Confidence score between 0 and 1
