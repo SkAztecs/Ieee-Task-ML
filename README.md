@@ -5,10 +5,10 @@ Video Classification using CNN Feature Extraction
 The objective of this project is to classify short video clips as real or fake using machine learning techniques. The dataset consists of short MP4 videos organized into class-wise folders.
 
 **Dataset**
-Training videos: 280 (140 real, 140 fake)
-Test videos: 100
-Video duration: approximately 5–8 seconds
-Labels are inferred from folder names (real, fake)
+-Training videos: 280 (140 real, 140 fake)
+-Test videos: 100
+-Video duration: approximately 5–8 seconds
+-Labels are inferred from folder names (real, fake)
 
 **Methodology**
 Video Feature Extraction:
